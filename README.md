@@ -1,6 +1,6 @@
 # Photography-Portfolio-Example
 
-Video coming aoon.
+Video coming soon.
 
 ### Launch the page
 
