@@ -1,6 +1,6 @@
 # Photography-Portfolio-Example
 
-Video coming soon.
+<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/79123e72-ded4-4ac4-b0b7-3fae16e6d0d0/Website+portfolio+page+demo+collage.png"/>
 
 ### Launch the page
 
