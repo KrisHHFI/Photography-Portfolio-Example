@@ -4,40 +4,35 @@ body {
 
 #navbar {
     align-items: center;
-    background-color: #5394fc;
-    color: white;
+    border-bottom: 2px solid black;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    height: 75px;
+    height: 80px;
+    margin: auto;
+    width: 80vw;
 }
 
-#navbar-text-container {
-    display: flex;
-}
-
-#navbar-image-container {
-    height: 80%;
-}
-
-#navbar img {
-    height: 100%;
-}
-
-#navbar-text-container a {
-    color: white;
+.navbar-child a {
+    color: black;
     font-size: 25px;
-    font-family: 'Konkhmer Sleokchher', cursive;
+    font-family: 'Playfair Display', serif;
     padding: 0 60px 0 60px;
     text-decoration: none;
 }
 
-.burgernav {
+.navbar-child a:hover {
+    text-decoration: underline 1.5px black;
+}
+
+#burgernav {
     right: 0px;
     top: 0px;
 }
 
-.burgernav a.icon {
+#burgernav a.icon {
     align-items: center;
+    color: black;
     display: flex;
     font-size: 18px;
     height: 75px;
@@ -51,18 +46,18 @@ body {
     z-index: 9999999;
 }
 
-.burgernav a.icon:hover {
+#burgernav a.icon:hover {
     transform: rotate(-90deg);
     transition: transform 0.5s ease-in-out;
 }
 
-.burgernav a.icon:hover~#burgernav-links {
+#burgernav a.icon:hover~#burgernav-links {
     display: flex;
     right: 0px;
 }
 
 #burgernav-links {
-    background-color: #5394fc;
+    background-color: white;
     box-shadow: 6px 3px 6px black;
     display: none;
     height: auto;
@@ -77,26 +72,30 @@ body {
     right: 0px;
 }
 
-.burgernav li {
+#burgernav li {
     list-style-type: none;
     padding: 8px 0px;
 }
 
 @media (max-height: 500px) {
-    .burgernav li {
+    #burgernav li {
         padding: 0px;
     }
 }
 
-.burgernav a {
-    color: white;
-    font-family: Nunito, sans-serif;
+#burgernav-links a {
+    color: black;
+    font-family: 'Playfair Display', serif;
     font-size: 22px;
     text-decoration: none;
 }
 
+#burgernav-links a:hover {
+    text-decoration: underline 1.5px black;
+}
+
 @media (max-height: 500px) {
-    .burgernav {
+    #burgernav {
         font-size: 18px;
     }
 }
@@ -108,18 +107,18 @@ body {
         display: inline;
     }
 
-    .burgernav {
+    #burgernav {
         display: none;
     }
 }
 
 @media (max-width: 1000px) {
 
-    #navbar-text-container {
+    .navbar-child {
         display: none;
     }
 
-    .burgernav {
+    #burgernav {
         display: inline;
     }
 
