@@ -133,13 +133,8 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 225px;
     justify-content: center;
-    padding-top: 50px;
-
-    @media (max-width:600px),(max-height:500px) {
-        padding-top: 0;
-    }
 }
 
 #header-container {
@@ -208,7 +203,7 @@ body {
 #footer {
     align-items: center; 
     display: flex;
-    height: 300px;
+    height: 275px;
     justify-content: center;
     width: 100vw;
 }
@@ -228,4 +223,8 @@ body {
     height: 30px;
     padding: 10px;
     width: 125px;
+}
+
+#copyright {
+    text-align: center;
 }
