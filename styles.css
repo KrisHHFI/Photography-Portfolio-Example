@@ -22,7 +22,13 @@ body {
 }
 
 .navbar-child a:hover {
-    text-decoration: underline 1.5px black;
+    background-color: black;
+    color: white;
+}
+
+#active-page a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 #burgernav {
