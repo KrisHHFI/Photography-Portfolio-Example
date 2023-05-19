@@ -157,19 +157,32 @@ body {
     height: 225px;
     justify-content: center;
     padding-top: 80px;
+
+    @media (max-width:1000px) {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    @media (max-width:500px) {
+        max-width: 290px;
+    }
 }
 
 #header-container {
-    text-align: left;
-
-    @media (max-width:500px) {
-        text-align: center;
-    }
+    text-align: center;
 }
 
 #header-text1 {
     font-family: 'Inter', sans-serif;
     font-size: clamp(2.75rem, 6vw, 5rem);
+}
+
+#header-text2 {
+    text-align: left;
+
+    @media (max-width:1000px) {
+        text-align: center;
+    }
 }
 
 #content {
@@ -220,7 +233,6 @@ body {
     top: 5px;
     width: 35px;
 }
-
 
 #footer {
     align-items: center;
