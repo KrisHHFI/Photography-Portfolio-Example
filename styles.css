@@ -10,8 +10,9 @@ body {
     flex-direction: row;
     justify-content: center;
     height: 80px;
+    transition: top 0.3s;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     z-index: 9999999;
 }
 
@@ -33,34 +34,25 @@ body {
     text-underline-offset: 4px;
 }
 
-#burgernav {
-    right: 0px;
-    top: 0px;
-}
-
 #burgernav-hover-box {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 260px;
     height: 90px;
+    position: fixed;
+    right: 0px;
+    width: 260px;
     z-index: 9999999;
 }
 
-#burgernav-hover-box:hover {
-    height: 290px;
-}
-
-#burgernav a.icon {
+#icon-container {
     align-items: center;
     color: black;
     display: flex;
     font-size: 18px;
     height: 80px;
     justify-content: end;
-    position: absolute;
+    position: fixed;
     right: 10px;
-    top: 0px;
+    transition: top 0.3s;
+    z-index: 9999999;
     width: 260px;
 }
 
@@ -70,7 +62,7 @@ body {
     z-index: 9999999;
 }
 
-#burgernav #burgernav-hover-box:hover i {
+#burgernav:hover i {
     transform: rotate(-90deg);
     transition: transform 0.5s ease-in-out;
 }
@@ -86,8 +78,7 @@ body {
     display: none;
     height: auto;
     padding-top: 75px;
-    position: absolute;
-    top: 0px;
+    position: fixed;
     width: 260px;
 }
 

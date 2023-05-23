@@ -26,10 +26,12 @@
     </div>
     </div>
     <div id="burgernav">
-        <div id="burgernav-hover-box">
+        <div id="icon-container">
             <a class="icon">
                 <i class="fa fa-bars fa-3x"></i>
             </a>
+        </div>
+        <div id="burgernav-hover-box">
         </div>
         <div id="burgernav-links">
             <ul>
@@ -136,6 +138,27 @@
         </div>
     </div>
     <p id="copyright">© 2023 Kristopher Pepper</p>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("burgernav").style.top = "0";
+                document.getElementById("burgernav-hover-box").style.top = "0";
+                document.getElementById("burgernav-links").style.top = "0";
+                document.getElementById("icon-container").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-85px";
+                document.getElementById("burgernav").style.top = "-85px";
+                document.getElementById("burgernav-hover-box").style.top = "-300px";
+                document.getElementById("burgernav-links").style.top = "-300px";
+                document.getElementById("icon-container").style.top = "-85px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
