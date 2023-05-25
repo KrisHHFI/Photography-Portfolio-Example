@@ -53,6 +53,7 @@
         </div>
     </div>
     <div id="content">
+        <div id="loader"></div>
         <div class="image">
             <img
                 src="https://www.shutterstock.com/shutterstock/photos/2188123425/display_1500/stock-photo-vantaa-finland-august-pegasus-boeing-ng-coming-in-to-land-at-helsinki-airport-2188123425.jpg">
@@ -158,6 +159,11 @@
             }
             prevScrollpos = currentScrollPos;
         }
+
+        $(window).on('load', function () {
+            $('#loader').hide();
+        })
+
     </script>
 </body>
 
