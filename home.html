@@ -114,6 +114,7 @@
     <p id="copyright">© 2023 Kristopher Pepper</p>
 
     <script>
+        // Enables the navbar to disappear when scrolling down and appear when scrolling up
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
@@ -130,10 +131,29 @@
             }
             prevScrollpos = currentScrollPos;
         }
+        // Hides the loader once the images have loaded
+        window.addEventListener('load', function () {
+            var images = document.querySelectorAll('#content img');
+            var loader = document.getElementById('loader');
 
-        $(window).on('load', function () {
-            $('#loader').hide();
-        })
+            var imageCount = images.length;
+            var loadedCount = 0;
+
+            function imageLoaded() {
+                loadedCount++;
+                if (loadedCount === imageCount) {
+                    loader.style.display = 'none';
+                }
+            }
+
+            images.forEach(function (image) {
+                if (image.complete) {
+                    imageLoaded();
+                } else {
+                    image.addEventListener('load', imageLoaded);
+                }
+            });
+        });
 
     </script>
 </body>

@@ -253,7 +253,6 @@ body {
     display: flex;
     height: 275px;
     justify-content: center;
-    width: 100vw;
 }
 
 #footer-container {
