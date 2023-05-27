@@ -34,40 +34,33 @@ body {
     text-underline-offset: 4px;
 }
 
-#burgernav-hover-box {
-    height: 90px;
-    position: fixed;
-    right: 0px;
-    width: 260px;
-    z-index: 9999999;
-}
-
 #icon-container {
     align-items: center;
     color: black;
     display: flex;
     font-size: 18px;
-    height: 80px;
+    height: 85px;
     justify-content: end;
     position: fixed;
-    right: 10px;
+    right: 0px;
     transition: top 0.3s;
     z-index: 9999999;
-    width: 260px;
+    width: 80px;
 }
 
 #burgernav i {
     transform: rotate(0deg);
     transition: transform 0.5s ease-in-out;
     z-index: 9999999;
+    right: 20px;
+    position: relative;
 }
 
 #burgernav:hover i {
     transform: rotate(-90deg);
-    transition: transform 0.5s ease-in-out;
 }
 
-#burgernav #burgernav-hover-box:hover~#burgernav-links {
+#burgernav #icon-container:hover~#burgernav-links, #burgernav-links:hover {
     display: flex;
     right: 0px;
 }
@@ -80,11 +73,6 @@ body {
     padding-top: 75px;
     position: fixed;
     width: 260px;
-}
-
-#burgernav-links:hover {
-    display: flex;
-    right: 0px;
 }
 
 #burgernav li {
