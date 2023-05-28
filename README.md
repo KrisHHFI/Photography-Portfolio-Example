@@ -1,6 +1,6 @@
 # Photography-Portfolio-Example
 
-<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/fe37730f-10dc-4d12-b5fe-00ba83269590/Website+portfolio+page+demo+collage.png"/>
+<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/8f6b0168-8966-4889-b862-fce8df23102f/Website+portfolio+page+demo+collage+2.png"/>
 
 ### Launch the page
 
