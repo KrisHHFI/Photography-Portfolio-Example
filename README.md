@@ -1,6 +1,6 @@
 # Photography-Portfolio-Example
 
-<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/8f6b0168-8966-4889-b862-fce8df23102f/Website+portfolio+page+demo+collage+2.png"/>
+<img src="https://images.squarespace-cdn.com/content/v1/587b630aebbd1ab22efeeb6b/987e5554-956a-4ed9-8b5f-0f832a0e979c/Sequence+%231%2815%29.gif"/>
 
 Check out the [demo video](https://www.youtube.com/watch?v=GY5fNxRZV3s&ab_channel=KrisKPhotos).
 
