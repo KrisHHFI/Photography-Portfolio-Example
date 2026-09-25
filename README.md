@@ -2,8 +2,6 @@
 
 <img src="Portfolio1.png"/>
 
-Check out the [demo video](https://www.youtube.com/watch?v=GY5fNxRZV3s&ab_channel=KrisKPhotos).
-
 ### Launch the page
 
 1) Download the folder.
